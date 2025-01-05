@@ -36,7 +36,7 @@
 
 A aplicação está disponível online. Acesse pelo link abaixo para explorar e utilizar o PWRando:
 
-[Visite o site](https://randomria.vercel.app/)
+[Visite o site](https://pwrando.vercel.app/)
 
 ## Instalação
 
