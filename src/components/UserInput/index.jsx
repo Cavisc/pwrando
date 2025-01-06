@@ -1,21 +1,20 @@
-import { useRef } from "react";
+import usePersistentFocus from "../../hooks/usePersistentFocus";
 import useUserInput from "../../hooks/useUserInput";
 
 export default function UserInput() {
   const { input, handleInputChange, handleKeyDown } = useUserInput();
-  const inputRef = useRef(null);
-
-  const focusInput = () => {
-    inputRef.current?.focus();
-  };
+  const { inputRef, focusInput } = usePersistentFocus();
 
   return (
-    <div className="inline cursor-text" onClick={focusInput}>
-      <span className="whitespace-pre-wrap">{input}</span>
+    <div
+      className="inline cursor-text w-full overflow-hidden"
+      onClick={focusInput}
+    >
+      <span className="whitespace-pre-wrap break-all">{input}</span>
       <input
         ref={inputRef}
         autoFocus={true}
-        className="absolute opacity-0"
+        className="absolute left-0 top-0 w-[1px] h-[1px] opacity-0"
         value={input}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
