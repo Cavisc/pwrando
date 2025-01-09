@@ -38,6 +38,12 @@ A aplicação está disponível online. Acesse pelo link abaixo para explorar e 
 
 [Visite o site](https://pwrando.vercel.app/)
 
+## Design no Figma
+
+Você pode visualizar o design do projeto no Figma pelo link abaixo:
+
+[Ver Design no Figma](https://www.figma.com/design/CPYAYyGM6Y5XfMYM1SkOtr/PWRando?node-id=0-1&t=jymmZiTJw7klzzWF-1)
+
 ## Instalação
 
 Para rodar o projeto localmente, siga os passos abaixo:
